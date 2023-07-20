@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Exercício 05 - JS</title>
+	<meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+	/*Declarar um array com o nome de 5 pessoas, declarar um outro array com nome de 3 pessoas, criar um terceiro array apenas com os nomes que não são iguais entre o primeiro e segundo array e exibi-lo no console.*/
+
+	const pessoas_a = ['Diego','Eduardo','Felipe','Ueslei','Samuel'];
+	
+	const pessoas_b = ['Diego','Felipe','Intruso'];
+
+	const pessoas_c = [];
+
+	const cont_a = pessoas_a.length;
+
+	const cont_b = pessoas_b.length;
+
+	var igual;
+
+	/*Loop do vetor pessoas_a sobre o vetor pessoas_b*/
+	for(var x=0; x<cont_a; x++){
+
+		//zerando a variável
+		igual = false;
+
+		for(var y=0; y<cont_b; y++){
+
+			if(pessoas_a[x] == pessoas_b[y]){
+
+				igual = true;
+			}
+		}
+
+		if(igual==false){
+			/*Preenche o vetor pessoas_c com todos elementos diferentes de pessoas_a com pessoas_b*/ 
+			pessoas_c.push(pessoas_a[x]);
+		}
+	}
+
+	for(var x=0; x<pessoas_c.length; x++){
+
+		console.log(pessoas_c[x]);
+	}
+
+</script>
+</body>
+</html>

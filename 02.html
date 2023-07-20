@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Exercício 02</title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+
+    /*Cadastrar/Declarar um array de objeto com o nome e idade de 5 pessoas e exibir no console o nome e idade de quem for a mais velha.*/
+
+    var pessoas =[
+    {
+        nome:'Fernando',
+        idade:15,
+    },
+    { 
+        nome:'Carlos',
+        idade:18,
+    },
+    { 
+        nome:'Jose',
+        idade:17,
+    },
+    { 
+        nome:'Marcos',
+        idade:26,
+    },
+    { 
+        nome:'Fernanda',
+        idade:19,
+    }
+    ];
+
+    for(var x=0; x<pessoas.length; x++){
+
+        if(pessoas[x].idade>=18){
+
+            console.log(pessoas[x].nome);
+        }
+    }
+ 
+</script>
+</body>
+</html>
+
+
